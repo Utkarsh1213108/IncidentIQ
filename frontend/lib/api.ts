@@ -26,6 +26,7 @@ export async function fetchStats() {
 }
 
 export async function analyzeIncident(id: string) {
+  console.log("fixed");
   const res = await fetch(`${API_BASE}/analyze/${id}`, {
     method: "POST",
   });
