@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { fetchIncident, fetchLogs, analyzeIncident, generatePostmortem } from "@/lib/api";
+import { fetchIncident, fetchLogs, analyzeIncident } from "@/lib/api";
 import { Incident, LogEntry, RCA } from "@/lib/types";
 
 const LOG_COLORS: Record<string, string> = {
