@@ -1,0 +1,10 @@
+[
+  {"timestamp": "2024-02-05T03:35:00Z", "level": "WARN", "service": "redis-sentinel", "host": "redis-sentinel-01", "message": "Master redis-primary-01 unreachable. Initiating failover check. quorum=2/3", "trace_id": null},
+  {"timestamp": "2024-02-05T03:35:05Z", "level": "INFO", "service": "redis-sentinel", "host": "redis-sentinel-01", "message": "Failover: promoting redis-replica-02 to master.", "trace_id": null},
+  {"timestamp": "2024-02-05T03:35:10Z", "level": "INFO", "service": "redis-sentinel", "host": "redis-sentinel-01", "message": "New master elected: redis-replica-02. Notifying all clients.", "trace_id": null},
+  {"timestamp": "2024-02-05T03:35:12Z", "level": "ERROR", "service": "redis-sentinel", "host": "redis-sentinel-01", "message": "New master redis-replica-02 unreachable after promotion. Split-brain detected? Re-initiating failover.", "trace_id": null},
+  {"timestamp": "2024-02-05T03:35:15Z", "level": "CRITICAL", "service": "redis-sentinel", "host": "redis-sentinel-01", "message": "Failover loop detected. Master election cycling every 3-5 seconds. All sessions being invalidated on each cycle.", "trace_id": null},
+  {"timestamp": "2024-02-05T03:41:08Z", "level": "CRITICAL", "service": "monitoring", "host": "prometheus-0", "message": "ALERT FIRING: RedisSessionInvalidationRate - 92.3% of sessions invalid. Users being logged out en masse. Severity=P1", "trace_id": null},
+  {"timestamp": "2024-02-05T03:45:00Z", "level": "ERROR", "service": "session-service", "host": "sess-pod-3f1b-abc", "message": "Session lookup failed: MOVED error from Redis. Master address changing every few seconds.", "trace_id": "ses-001"},
+  {"timestamp": "2024-02-05T05:19:44Z", "level": "INFO", "service": "monitoring", "host": "prometheus-0", "message": "ALERT RESOLVED: Redis Sentinel stabilized after network partition resolved. INC-006 closed.", "trace_id": null}
+]

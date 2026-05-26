@@ -1,0 +1,12 @@
+[
+  {"timestamp": "2024-01-25T18:00:00Z", "level": "INFO", "service": "recommendation-service", "host": "rec-pod-1a2b-abc", "message": "Deployment v1.9.2 complete. 3/3 replicas healthy.", "trace_id": null},
+  {"timestamp": "2024-01-25T18:15:00Z", "level": "WARN", "service": "recommendation-service", "host": "rec-pod-1a2b-abc", "message": "Memory usage: 78% (6.2GB/8GB). Above 75% threshold.", "trace_id": null},
+  {"timestamp": "2024-01-25T18:33:00Z", "level": "WARN", "service": "recommendation-service", "host": "rec-pod-1a2b-abc", "message": "Memory usage: 94% (7.5GB/8GB). Critical threshold breached.", "trace_id": null},
+  {"timestamp": "2024-01-25T18:33:45Z", "level": "CRITICAL", "service": "infrastructure", "host": "k8s-node-01", "message": "OOMKilled: rec-pod-1a2b-abc. Container exceeded memory limit 8GB. Terminating.", "trace_id": null},
+  {"timestamp": "2024-01-25T18:34:00Z", "level": "ERROR", "service": "api-gateway", "host": "gw-pod-2x9f-a1b2", "message": "Upstream recommendation-service unavailable. Circuit breaker opening.", "trace_id": null},
+  {"timestamp": "2024-01-25T18:34:10Z", "level": "CRITICAL", "service": "infrastructure", "host": "k8s-node-02", "message": "OOMKilled: rec-pod-1a2b-def. Container exceeded memory limit 8GB. Terminating.", "trace_id": null},
+  {"timestamp": "2024-01-25T18:34:20Z", "level": "CRITICAL", "service": "monitoring", "host": "prometheus-0", "message": "ALERT FIRING: NodeMemoryPressure + MultipleOOMKills. Severity=P2. 3 pods OOMKilled in 50 seconds.", "trace_id": null},
+  {"timestamp": "2024-01-25T18:35:00Z", "level": "ERROR", "service": "product-service", "host": "prod-pod-7c3e-xyz", "message": "Downstream recommendation-service timeout after 5000ms. Returning empty recommendations.", "trace_id": "cas-001"},
+  {"timestamp": "2024-01-25T18:35:30Z", "level": "ERROR", "service": "homepage-service", "host": "home-pod-4d5e-rst", "message": "Failed to load personalized feed: recommendation-service unreachable. Falling back to trending.", "trace_id": "cas-002"},
+  {"timestamp": "2024-01-25T20:11:02Z", "level": "INFO", "service": "monitoring", "host": "prometheus-0", "message": "ALERT RESOLVED: Memory leak patched in v1.9.3, rolled out. All nodes healthy. INC-004 resolved.", "trace_id": null}
+]
