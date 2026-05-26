@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IncidentIQ — AI Incident Root Cause Analyzer
 
 > **AI-powered incident analysis and postmortem generation for SRE teams.**  
@@ -233,3 +234,6 @@ Built for the hackathon but PRs welcome! Key areas for improvement:
 ## 📄 License
 
 MIT License — built with ❤️ for the SRE community
+=======
+# IncidentIQ
+>>>>>>> ef09c465d333e82d2615bb9cf7d3a8919d71d427
